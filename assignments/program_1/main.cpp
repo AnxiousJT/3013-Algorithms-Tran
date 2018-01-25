@@ -86,7 +86,7 @@ public:
 		}
 	}
 
-		
+
 	/*
 	* @FunctionName: orderList
 	* @Description:
@@ -141,6 +141,10 @@ public:
 			Head = temp;
 			return;
 		}
+		if (Head->data > data) {
+			temp->next = Head;
+			Head = temp;
+		}
 
 		while (previous && current) {
 			if (data > previous->data && data < current->data) {
@@ -149,6 +153,9 @@ public:
 			}
 			previous = previous->next;
 			current = current->next;
+			if (previous->next == NULL && previous->data < data) {
+				previous->next = temp;
+			}
 		}
 	}
 
@@ -156,7 +163,7 @@ public:
 
 int main() {
 	// seed random number generator
-	srand(8734587);
+	srand(87345);
 
 	// declare instance of intLinkedList turning
 	// a class definition into an "object"
