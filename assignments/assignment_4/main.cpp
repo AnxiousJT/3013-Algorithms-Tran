@@ -1,4 +1,3 @@
-```
 /*
 @ProgramName: Algorithms Assignment 4
 @FileName: main.cpp
@@ -8,9 +7,6 @@ defined methods in the BSTree cpp file.
 @Semester: Spring 2018
 @Date: February 2018
 */
-
-
-
 
 #include <iostream>
 #include<fstream>
@@ -51,4 +47,3 @@ int main()
 	B.GraphVizOut("after.txt");
 	return 0;
 }
-```
