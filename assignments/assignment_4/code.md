@@ -9,9 +9,6 @@ defined methods in the BSTree cpp file.
 @Date: February 2018
 */
 
-
-
-
 #include <iostream>
 #include<fstream>
 #include<string>
